@@ -1,0 +1,1 @@
+var domain_name="http://localhost:8088/api/";
