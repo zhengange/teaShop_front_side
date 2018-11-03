@@ -20,6 +20,7 @@
 <body>
 <div class="container_12">
     <div id="top">
+        <!--<button style="width: 100px;height:100px">按钮</button>-->
         <div class="grid_3">
             <div class="phone_top">
                 Call Us +777 (100) 1234
@@ -126,39 +127,7 @@
     <div class="container_12">
         <div class="grid_12">
             <nav class="primary">
-                <ul>
-                    <li class="curent"><a href="index.html">Home</a></li>
-                    <li><a href="catalog_grid.html">Solids</a></li>
-                    <li><a href="catalog_grid.html">Liquids</a></li>
-                    <li>
-                        <a href="catalog_grid.html">Spray</a>
-                        <ul class="sub">
-                            <li><a href="catalog_grid.html">For home</a></li>
-                            <li><a href="catalog_grid.html">For Garden</a></li>
-                            <li><a href="catalog_grid.html">For Car</a></li>
-                            <li><a href="catalog_grid.html">Other spray</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="catalog_grid.html">Electric</a></li>
-                    <li><a href="catalog_grid.html">For cars</a></li>
-                    <li>
-                        <a href="#">All pages</a>
-                        <ul class="sub">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="text_page.html">Typography and basic styles</a></li>
-                            <li><a href="catalog_grid.html">Catalog (grid view)</a></li>
-                            <li><a href="catalog_list.html">Catalog (list type view)</a></li>
-                            <li><a href="product_page.html">Product view</a></li>
-                            <li><a href="shopping_cart.html">Shoping cart</a></li>
-                            <li><a href="checkout.html">Proceed to checkout</a></li>
-                            <li><a href="compare.html">Products comparison</a></li>
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="contact_us.html">Contact us</a></li>
-                            <li><a href="404.html">404</a></li>
-                            <li><a href="blog.html">Blog posts</a></li>
-                            <li><a href="blog_post.html">Blog post view</a></li>
-                        </ul>
-                    </li>
+                <ul id="indexTabUl">
                 </ul>
             </nav><!-- .primary -->
         </div><!-- .grid_12 -->
@@ -309,28 +278,31 @@
                     <img class="sale" src="images/sale.png" alt="Sale"/>
                     <div class="preview slides_container">
                         <div class="prev_bg">
-                            <a href="images/produkt_slid.png" class="jqzoom" rel='gal1' title="">
-                                <img src="images/produkt_slid.png" title="" alt=""/>
+                            <a href="" class="jqzoom" rel='gal1' title="">
+                                <img id="pdtInitImg" src="" title="" alt=""/>
                             </a>
                         </div>
                     </div><!-- .prev -->
 
                     <ul class="pagination clearfix" id="thumblist">
-                        <li><a class="zoomThumbActive" href='javascript:void(0);'
-                               rel="{gallery: 'gal1', smallimage: './images/produkt_slid.png',largeimage: './images/produkt_slid.png'}"><img
-                                src='images/produkt_slid.png' alt=""></a></li>
-                        <li><a href='javascript:void(0);'
-                               rel="{gallery: 'gal1', smallimage: './images/produkt_slid1.png',largeimage: './images/produkt_slid1.png'}"><img
-                                src='images/produkt_slid1.png' alt=""></a></li>
-                        <li><a href='javascript:void(0);'
-                               rel="{gallery: 'gal1', smallimage: './images/produkt_slid2.png',largeimage: './images/produkt_slid2.png'}"><img
-                                src='images/produkt_slid2.png' alt=""></a></li>
-                        <li><a href='javascript:void(0);'
-                               rel="{gallery: 'gal1', smallimage: './images/produkt_slid3.png',largeimage: './images/produkt_slid3.png'}"><img
-                                src='images/produkt_slid3.png' alt=""></a></li>
-                        <li><a href='javascript:void(0);'
-                               rel="{gallery: 'gal1', smallimage: './images/produkt_slid4.png',largeimage: './images/produkt_slid4.png'}"><img
-                                src='images/produkt_slid4.png' alt=""></a></li>
+                        <!--<li><a class="zoomThumbActive" href='javascript:void(0);'-->
+                        <!--rel="{gallery: 'gal1', smallimage: './images/testt.jpg',largeimage: './images/testt.jpg'}"><img-->
+                        <!--src='images/testt.jpg' alt=""></a></li>-->
+                        <!--<li><a href='javascript:void(0);'-->
+                        <!--rel="{gallery: 'gal1', smallimage: './images/produkt_slid1.png',largeimage: './images/produkt_slid1.png'}"><img-->
+                        <!--src='images/produkt_slid1.png' alt=""></a></li>-->
+                        <!--<li><a href='javascript:void(0);'-->
+                        <!--rel="{gallery: 'gal1', smallimage: './images/produkt_slid2.png',largeimage: './images/produkt_slid2.png'}"><img-->
+                        <!--src='images/produkt_slid2.png' alt=""></a></li>-->
+                        <!--<li><a href='javascript:void(0);'-->
+                        <!--rel="{gallery: 'gal1', smallimage: './images/produkt_slid3.png',largeimage: './images/produkt_slid3.png'}"><img-->
+                        <!--src='images/produkt_slid3.png' alt=""></a></li>-->
+                        <!--<li><a href='javascript:void(0);'-->
+                        <!--rel="{gallery: 'gal1', smallimage: './images/produkt_slid4.png',largeimage: './images/produkt_slid4.png'}"><img-->
+                        <!--src='images/produkt_slid4.png' alt=""></a></li>-->
+                        <!--<li><a href='javascript:void(0);'-->
+                        <!--rel="{gallery: 'gal1', smallimage: 'http://localhost:8088/api/v1/File/getImage?fileName=c739ebb754f2408db8f266766fd20faf',largeimage: 'http://localhost:8088/api/v1/File/getImage?fileName=c739ebb754f2408db8f266766fd20faf'}"><img-->
+                        <!--src='http://localhost:8088/api/v1/File/getImage?fileName=c739ebb754f2408db8f266766fd20faf' alt=""></a></li>-->
                     </ul>
 
                     <div class="next_prev">
@@ -350,7 +322,8 @@
                             <span>1 REVIEW(S)</span>
                             <a class="add_review" href="#">ADD YOUR REVIEW</a>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra faucibus congue.
+                        <p id="pdtDescribe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra
+                            faucibus congue.
                             Aenean luctus dolor et purus malesuada luctus. Quisque ullamcorper ante viverra lectus
                             fermentum quis rutrum erat sollicitudin. Fusce tortor massa.</p>
                         <div class="ava_price">
@@ -364,8 +337,8 @@
                             </div><!-- .availability_sku -->
 
                             <div class="price">
-                                <div class="price_new">$550.00</div>
-                                <div class="price_old">$725.00</div>
+                                <div id="priceNew" class="price_new">$550.00</div>
+                                <div id="priceOld" class="price_old">$725.00</div>
                             </div><!-- .price -->
                         </div><!-- .ava_price -->
 
@@ -400,71 +373,14 @@
                         <div class="clear"></div>
 
                         <div class="tab1 tab_body">
-                            <h4>Tables Style</h4>
-                            <p>Suspendisse at placerat turpis. Duis luctus erat vel magna pharetra aliquet. Maecenas
+                            <p id="pdtDescribe2">Suspendisse at placerat turpis. Duis luctus erat vel magna pharetra
+                                aliquet. Maecenas
                                 tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis
                                 lobortis dictum. Etiam mollis volutpat odio, id euismod justo gravida a. Aliquam erat
                                 volutpat. Phasellus faucibus venenatis lorem, vitae commodo elit pretium et. Duis
                                 rhoncus lobortis congue. Vestibulum et purus dui, vel porta lectus. Sed vulputate
                                 pulvinar adipiscing.</p>
-                            <ul>
-                                <li>She was walking to the mall.</li>
-                                <li>Ted might eat the cake.</li>
-                                <li>You must go right now.</li>
-                                <li>Words were spoken.</li>
-                                <li>The teacher is writing a report.</li>
-                            </ul>
 
-                            <p>Here are some verb phrase examples where the verb phrase is the predicate of a sentence.
-                                In this case, the verb phrase consists of the main verb plus any auxiliary, or helping,
-                                verbs. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta
-                                nec, tempus vitae, iaculis semper, pede.</p>
-                            <ol>
-                                <li>Shipping & Delivery.</li>
-                                <li>Privacy & Security.</li>
-                                <li>Returns & Replacements.</li>
-                                <li>Payment, Pricing & Promotions.</li>
-                                <li>Viewing Orders.</li>
-                            </ol>
-
-                            <p>Next are some verb phrase examples of verb phrases where the phrase has a single function
-                                which means it can act like an adverb or an adjective. The phrase would include the verb
-                                and any modifiers, complements, or objects. Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit. Morbi luctus. Duis lobortis. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Curabitur nec posuere odio. Proin vel ultrices erat. </p>
-
-                            <table>
-                                <tr>
-                                    <th class="bg">First Column</th>
-                                    <th>Second Column</th>
-                                    <th class="bg">Third Column</th>
-                                    <th>Fourth Column</th>
-                                </tr>
-                                <tr>
-                                    <td class="bg">One</td>
-                                    <td>no</td>
-                                    <td class="bg">yes</td>
-                                    <td>yes, all</td>
-                                </tr>
-                                <tr>
-                                    <td class="bg">Two</td>
-                                    <td>0</td>
-                                    <td class="bg">1</td>
-                                    <td>all</td>
-                                </tr>
-                                <tr>
-                                    <td class="bg">Three</td>
-                                    <td>$399</td>
-                                    <td class="bg">$599</td>
-                                    <td>$799</td>
-                                </tr>
-                                <tr>
-                                    <td class="bg">Four</td>
-                                    <td><a href="#">Call action</a></td>
-                                    <td class="bg"><a href="#">Call action</a></td>
-                                    <td><a href="#">Call action</a></td>
-                                </tr>
-                            </table>
                             <div class="clear"></div>
                         </div><!-- .tab1 .tab_body -->
 
@@ -616,90 +532,90 @@
                     <div class="list_carousel">
 
                         <ul id="list_product" class="list_product">
-                            <li class="">
-                                <div class="grid_3 product">
-                                    <img class="sale" src="images/sale.png" alt="Sale"/>
-                                    <div class="prev">
-                                        <a href="product_page.html"><img src="images/product_1.png" alt=""
-                                                                         title=""/></a>
-                                    </div><!-- .prev -->
-                                    <h3 class="title">Febreze Air Effects New Zealand Springs</h3>
-                                    <div class="cart">
-                                        <div class="price">
-                                            <div class="vert">
-                                                <div class="price_new">$550.00</div>
-                                                <div class="price_old">$725.00</div>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="obn"></a>
-                                        <a href="#" class="like"></a>
-                                        <a href="#" class="bay"></a>
-                                    </div><!-- .cart -->
-                                </div><!-- .grid_3 -->
-                            </li>
+                            <!--<li class="">-->
+                            <!--<div class="grid_3 product">-->
+                            <!--<img class="sale" src="images/sale.png" alt="Sale"/>-->
+                            <!--<div class="prev">-->
+                            <!--<a href="product_page.html"><img src="images/product_1.png" alt=""-->
+                            <!--title=""/></a>-->
+                            <!--</div>&lt;!&ndash; .prev &ndash;&gt;-->
+                            <!--<h3 class="title">Febreze Air Effects New Zealand Springs</h3>-->
+                            <!--<div class="cart">-->
+                            <!--<div class="price">-->
+                            <!--<div class="vert">-->
+                            <!--<div class="price_new">$550.00</div>-->
+                            <!--<div class="price_old">$725.00</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<a href="#" class="obn"></a>-->
+                            <!--<a href="#" class="like"></a>-->
+                            <!--<a href="#" class="bay"></a>-->
+                            <!--</div>&lt;!&ndash; .cart &ndash;&gt;-->
+                            <!--</div>&lt;!&ndash; .grid_3 &ndash;&gt;-->
+                            <!--</li>-->
 
-                            <li class="">
-                                <div class="grid_3 product">
-                                    <div class="prev">
-                                        <a href="product_page.html"><img src="images/product_2.png" alt=""
-                                                                         title=""/></a>
-                                    </div><!-- .prev -->
-                                    <h3 class="title">Febreze Air Effects New Zealand Springs</h3>
-                                    <div class="cart">
-                                        <div class="price">
-                                            <div class="vert">
-                                                <div class="price_new">$550.00</div>
-                                                <div class="price_old">$725.00</div>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="obn"></a>
-                                        <a href="#" class="like"></a>
-                                        <a href="#" class="bay"></a>
-                                    </div><!-- .cart -->
-                                </div><!-- .grid_3 -->
-                            </li>
+                            <!--<li class="">-->
+                            <!--<div class="grid_3 product">-->
+                            <!--<div class="prev">-->
+                            <!--<a href="product_page.html"><img src="images/product_2.png" alt=""-->
+                            <!--title=""/></a>-->
+                            <!--</div>&lt;!&ndash; .prev &ndash;&gt;-->
+                            <!--<h3 class="title">Febreze Air Effects New Zealand Springs</h3>-->
+                            <!--<div class="cart">-->
+                            <!--<div class="price">-->
+                            <!--<div class="vert">-->
+                            <!--<div class="price_new">$550.00</div>-->
+                            <!--<div class="price_old">$725.00</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<a href="#" class="obn"></a>-->
+                            <!--<a href="#" class="like"></a>-->
+                            <!--<a href="#" class="bay"></a>-->
+                            <!--</div>&lt;!&ndash; .cart &ndash;&gt;-->
+                            <!--</div>&lt;!&ndash; .grid_3 &ndash;&gt;-->
+                            <!--</li>-->
 
-                            <li class="">
-                                <div class="grid_3 product">
-                                    <div class="prev">
-                                        <a href="product_page.html"><img src="images/product_3.png" alt=""
-                                                                         title=""/></a>
-                                    </div><!-- .prev -->
-                                    <h3 class="title">Febreze Air Effects New Zealand Springs</h3>
-                                    <div class="cart">
-                                        <div class="price">
-                                            <div class="vert">
-                                                <div class="price_new">$550.00</div>
-                                                <div class="price_old">$725.00</div>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="obn"></a>
-                                        <a href="#" class="like"></a>
-                                        <a href="#" class="bay"></a>
-                                    </div><!-- .cart -->
-                                </div><!-- .grid_3 -->
-                            </li>
+                            <!--<li class="">-->
+                            <!--<div class="grid_3 product">-->
+                            <!--<div class="prev">-->
+                            <!--<a href="product_page.html"><img src="images/product_3.png" alt=""-->
+                            <!--title=""/></a>-->
+                            <!--</div>&lt;!&ndash; .prev &ndash;&gt;-->
+                            <!--<h3 class="title">Febreze Air Effects New Zealand Springs</h3>-->
+                            <!--<div class="cart">-->
+                            <!--<div class="price">-->
+                            <!--<div class="vert">-->
+                            <!--<div class="price_new">$550.00</div>-->
+                            <!--<div class="price_old">$725.00</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<a href="#" class="obn"></a>-->
+                            <!--<a href="#" class="like"></a>-->
+                            <!--<a href="#" class="bay"></a>-->
+                            <!--</div>&lt;!&ndash; .cart &ndash;&gt;-->
+                            <!--</div>&lt;!&ndash; .grid_3 &ndash;&gt;-->
+                            <!--</li>-->
 
-                            <li class="">
-                                <div class="grid_3 product">
-                                    <div class="prev">
-                                        <a href="product_page.html"><img src="images/product_4.png" alt=""
-                                                                         title=""/></a>
-                                    </div><!-- .prev -->
-                                    <h3 class="title">Febreze Air Effects New Zealand Springs</h3>
-                                    <div class="cart">
-                                        <div class="price">
-                                            <div class="vert">
-                                                <div class="price_new">$550.00</div>
-                                                <div class="price_old">$725.00</div>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="obn"></a>
-                                        <a href="#" class="like"></a>
-                                        <a href="#" class="bay"></a>
-                                    </div><!-- .cart -->
-                                </div><!-- .grid_3 -->
-                            </li>
+                            <!--<li class="">-->
+                            <!--<div class="grid_3 product">-->
+                            <!--<div class="prev">-->
+                            <!--<a href="product_page.html"><img src="images/product_4.png" alt=""-->
+                            <!--title=""/></a>-->
+                            <!--</div>&lt;!&ndash; .prev &ndash;&gt;-->
+                            <!--<h3 class="title">Febreze Air Effects New Zealand Springs</h3>-->
+                            <!--<div class="cart">-->
+                            <!--<div class="price">-->
+                            <!--<div class="vert">-->
+                            <!--<div class="price_new">$550.00</div>-->
+                            <!--<div class="price_old">$725.00</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<a href="#" class="obn"></a>-->
+                            <!--<a href="#" class="like"></a>-->
+                            <!--<a href="#" class="bay"></a>-->
+                            <!--</div>&lt;!&ndash; .cart &ndash;&gt;-->
+                            <!--</div>&lt;!&ndash; .grid_3 &ndash;&gt;-->
+                            <!--</li>-->
                         </ul><!-- #list_product -->
                     </div><!-- .list_carousel -->
                 </div><!-- .carousel -->
@@ -799,54 +715,184 @@
 <script src="plugins/messenger/js/messenger.min.js"></script>
 <script src="plugins/messenger/js/messenger-theme-flat.js"></script>
 <script src="js/messenger-common.js"></script>
+<!--<script>var te="aaa"</script>-->
 <script>
     $(document).ready(function () {
-        $('.jqzoom').jqzoom({
-            zoomType: 'standard',
-            lens: true,
-            preloadImages: true,
-            alwaysOn: false
-        });
 
-        $("select").selectBox();
+        var product = {};
 
-        $('#wrapper_tab a').click(function () {
-            if ($(this).attr('class') != $('#wrapper_tab').attr('class')) {
-                $('#wrapper_tab').attr('class', $(this).attr('class'));
+        var indexTabUl = $('#indexTabUl');
+
+        function getIndexTabTitles() {
+            $.ajax({
+                url: domain_name + "v1/Index/getIndexTabTitles",
+                type: "post",
+                error: function (response) {
+                    if (response.Message != undefined) {
+                        MessengerError(response.Message);
+                    } else {
+                        MessengerError("数据获取失败！");
+                    }
+                },
+                success: function (response) {
+                    if (response.code == 1) {
+                        console.log(response);
+                        if (response && response.data) {
+                            initTableTitleAndItems(response.data);
+                        }
+                    } else {
+                        MessengerError(response.msg);
+                    }
+                }
+            });
+        }
+
+        getIndexTabTitles();
+
+        function initTableTitleAndItems(indexTabTitleEntities) {
+            if (indexTabTitleEntities.length > 0) {
+                var titleEntity1 = indexTabTitleEntities[0];
+                var appStr = "<li class='curent'><a href='" + titleEntity1.href + "'>" + titleEntity1.title + "</a>";
+                var title1Items = titleEntity1.indexTabItemEntityList;
+                if (title1Items != undefined && title1Items.length > 0) {
+                    appStr += " <ul class='sub'>";
+                    for (var j = 0, len2 = title1Items.length; j < len2; j++) {
+                        var item = title1Items[j];
+                        appStr += "<li><a href='" + item.href + "'>" + item.itemName + "</a></li>";
+                    }
+                    appStr += "</ul>";
+                }
+                appStr += "</li>";
+
+                for (var i = 1, len = indexTabTitleEntities.length; i < len; i++) {
+                    var titleEntity = indexTabTitleEntities[i];
+                    var titleItems = titleEntity.indexTabItemEntityList;
+                    appStr += "<li><a href='" + titleEntity.href + "'>" + titleEntity.title + "</a>";
+                    if (titleItems != undefined && titleItems.length > 0) {
+                        appStr += " <ul class='sub'>";
+                        for (var j = 0, len2 = titleItems.length; j < len2; j++) {
+                            var item = titleItems[j];
+                            appStr += "<li><a href='" + item.href + "'>" + item.itemName + "</a></li>";
+                        }
+                        appStr += "</ul>";
+                    }
+                    appStr += "</li>";
+                }
+                indexTabUl.append(appStr);
             }
-            return false;
-        });
 
-        $('#list_product').carouFredSel({
-            prev: '#prev_c1',
-            next: '#next_c1',
-            auto: false
-        });
-        $('#list_banners').carouFredSel({
-            prev: '#ban_prev',
-            next: '#ban_next',
-            scroll: 1,
-            auto: false
-        });
-        $('#thumblist').carouFredSel({
-            prev: '#img_prev',
-            next: '#img_next',
-            scroll: 1,
-            auto: false,
-            circular: false,
-        });
-        $(window).resize();
+        }
 
-        $("button").click(function () {
-            $(this).addClass('click')
-        });
+        function initWidgets() {
+            var jqzoom = $('.jqzoom').jqzoom({
+                zoomType: 'standard',
+                lens: true,
+                preloadImages: true,
+                alwaysOn: false
+            });
+
+            $("select").selectBox();
+
+            $('#wrapper_tab a').click(function () {
+                if ($(this).attr('class') != $('#wrapper_tab').attr('class')) {
+                    $('#wrapper_tab').attr('class', $(this).attr('class'));
+                }
+                return false;
+            });
+
+
+            $('#list_banners').carouFredSel({
+                prev: '#ban_prev',
+                next: '#ban_next',
+                scroll: 1,
+                auto: false
+            });
+            $('#thumblist').carouFredSel({
+                prev: '#img_prev',
+                next: '#img_next',
+                scroll: 1,
+                auto: false,
+                circular: false,
+            });
+            $(window).resize();
+
+            $("button").click(function () {
+                $(this).addClass('click');
+//                alert("click triggered");
+            });
+
+            var thumblist = $('#thumblist');
+
+            function triggerAClick() {
+                var a_0 = $("a:eq(0)", thumblist);
+                if (a_0 && a_0.data("events") && a_0.data("events")["click"]) {
+                    a_0.trigger("click");
+                } else {
+                    setTimeout(function () {
+                        triggerAClick();
+                    }, 100)
+                }
+            }
+
+            triggerAClick();
+        }
 
         var paramObj = getQueryString();
         var pdtNoParam = paramObj['pdtNo'];
 
+        function refreshPageData(data) {
+            var thumblist = $('#thumblist');
+            var appStr = '';
+
+            if (!isEmpty(data.pdtImgGuid)) {
+                $("#pdtInitImg").attr("src", domain_name + "v1/File/getImage?fileName=" + data.pdtImgGuid);
+                $('#pdtInitImg').parent('a').attr("href", domain_name + "v1/File/getImage?fileName=" + data.pdtImgGuid);
+
+                appStr += "<li><a  href='javascript:void(0);' rel=\"{gallery:'gal1', smallimage:'" + domain_name + "v1/File/getImage?fileName=" + data.pdtImgGuid + "',largeimage: '" + domain_name + "v1/File/getImage?fileName=" + data.pdtImgGuid + "'}\"><img" +
+                    " src='" + domain_name + "v1/File/getImage?fileName=" + data.pdtImgGuid + "' alt=''></a></li>";
+            } else {
+                MessengerError("主图为空！");
+                return;
+            }
+
+            if (!isEmpty(data.pdtImg1)) {
+                appStr += "<li><a  href='javascript:void(0);' rel=\"{gallery:'gal1', smallimage:'" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg1 + "',largeimage: '" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg1 + "'}\"><img" +
+                    " src='" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg1 + "' alt=''></a></li>";
+            }
+            if (!isEmpty(data.pdtImg2)) {
+                appStr += "<li><a  href='javascript:void(0);' rel=\"{gallery:'gal1', smallimage:'" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg2 + "',largeimage: '" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg2 + "'}\"><img" +
+                    " src='" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg2 + "' alt=''></a></li>";
+            }
+            if (!isEmpty(data.pdtImg3)) {
+                appStr += "<li><a  href='javascript:void(0);' rel=\"{gallery:'gal1', smallimage:'" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg3 + "',largeimage: '" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg3 + "'}\"><img" +
+                    " src='" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg3 + "' alt=''></a></li>";
+            }
+            if (!isEmpty(data.pdtImg4)) {
+                appStr += "<li><a  href='javascript:void(0);' rel=\"{gallery:'gal1', smallimage:'" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg4 + "',largeimage: '" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg4 + "'}\"><img" +
+                    " src='" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg4 + "' alt=''></a></li>";
+            }
+            if (!isEmpty(data.pdtImg5)) {
+                appStr += "<li><a  href='javascript:void(0);' rel=\"{gallery:'gal1', smallimage:'" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg5 + "',largeimage: '" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg5 + "'}\"><img" +
+                    " src='" + domain_name + "v1/File/getImage?fileName=" + data.pdtImg5 + "' alt=''></a></li>";
+            }
+            thumblist.append(appStr);
+
+            initWidgets();
+        }
+
+        function refreshDescribe(data) {
+            $("#pdtDescribe").text(data.pdtDescribe);
+            $("#pdtDescribe2").text(data.pdtDescribe);
+        }
+
+        function refreshPrice(data) {
+            $("#priceNew").text(data.pdtPrice);
+            $("#priceOld").text(data.pdtOldPrice);
+        }
+
         function initProductPage() {
             $.ajax({
-                url: domain_name + "v1/Product/getPdtInfo",
+                url: domain_name + "v1/Product/getPdtInfoByNo",
                 type: "get",
                 data: {"pdtNo": pdtNoParam},
                 error: function (response) {
@@ -860,6 +906,11 @@
                     if (response.code == 1) {
                         console.log(response);
                         if (response && response.data) {
+                            product = response.data;
+                            getRelatedPdts();
+                            refreshPageData(response.data);
+                            refreshDescribe(response.data);
+                            refreshPrice(response.data);
                         }
                     } else {
                         MessengerError(response.msg);
@@ -869,10 +920,64 @@
         }
 
         initProductPage();
+
+        function initRelatedCarouFredSel() {
+            $('#list_product').carouFredSel({
+                prev: '#prev_c1',
+                next: '#next_c1',
+                auto: false
+            });
+        }
+
+        function initRelatedPdts(data) {
+            if (isEmpty(data)) {
+                return;
+            }
+            var app = "";
+            for (var i = 0; i < data.length; i++) {
+                var seller = data[i];
+                app += " <li class=''> <div class='grid_3 product'>";
+                app += " <img class='sale' src='images/sale.png' alt='Sale'/>";
+                app += " <div class='prev'><a href='" + seller.sellerHref + "'><img src='" + domain_name + "v1/File/getImage?fileName=" + seller.productEntity.pdtImgGuid + "' alt='' title=''/></a></div>";
+                app += " <h3 class='title'>" + seller.productEntity.pdtName + "</h3>";
+                app += " <div class='cart'><div class='price'><div class='vert'><div class='price_new'>" +
+                    seller.productEntity.pdtPrice + "</div> <div class='price_old'>" + seller.productEntity.pdtOldPrice + "</div> </div></div>" +
+                    " <a href='#' class='obn'></a><a href='#' class='like'></a><a href='#' class='bay'></a>" +
+                    "</div> </div></li>";
+            }
+            $('#list_product').append(app);
+            initRelatedCarouFredSel();
+        }
+
+        function getRelatedPdts() {
+            $.ajax({
+                url: domain_name + "v1/Index/getSellersByType",
+                type: "get",
+                data: {'type': product.pdtType},
+                error: function (response) {
+                    if (response.Message != undefined) {
+                        MessengerError(response.Message);
+                    } else {
+                        MessengerError("数据获取失败！");
+                    }
+                },
+                success: function (response) {
+                    if (response.code == 1) {
+                        if (response && response.data) {
+                            initRelatedPdts(response.data);
+                        }
+                    } else {
+                        MessengerError(response.msg);
+                    }
+                }
+            });
+        }
+
     });
 
 </script>
 </body>
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8"/><!-- /Added by HTTrack -->
+<!--<script>console.log(te)</script>-->
 </html>
