@@ -322,10 +322,11 @@
                             <span>1 REVIEW(S)</span>
                             <a class="add_review" href="#">ADD YOUR REVIEW</a>
                         </div>
-                        <p id="pdtDescribe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra
-                            faucibus congue.
-                            Aenean luctus dolor et purus malesuada luctus. Quisque ullamcorper ante viverra lectus
-                            fermentum quis rutrum erat sollicitudin. Fusce tortor massa.</p>
+                        <div id="pdtDescribe"></div>
+                        <!--<p id="pdtDescribe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra-->
+                            <!--faucibus congue.-->
+                            <!--Aenean luctus dolor et purus malesuada luctus. Quisque ullamcorper ante viverra lectus-->
+                            <!--fermentum quis rutrum erat sollicitudin. Fusce tortor massa.</p>-->
                         <div class="ava_price">
                             <div class="availability_sku">
                                 <div class="availability">
@@ -373,13 +374,14 @@
                         <div class="clear"></div>
 
                         <div class="tab1 tab_body">
-                            <p id="pdtDescribe2">Suspendisse at placerat turpis. Duis luctus erat vel magna pharetra
-                                aliquet. Maecenas
-                                tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis
-                                lobortis dictum. Etiam mollis volutpat odio, id euismod justo gravida a. Aliquam erat
-                                volutpat. Phasellus faucibus venenatis lorem, vitae commodo elit pretium et. Duis
-                                rhoncus lobortis congue. Vestibulum et purus dui, vel porta lectus. Sed vulputate
-                                pulvinar adipiscing.</p>
+                            <div id="pdtDescribe2"></div>
+                            <!--<p id="pdtDescribe2">Suspendisse at placerat turpis. Duis luctus erat vel magna pharetra-->
+                                <!--aliquet. Maecenas-->
+                                <!--tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis-->
+                                <!--lobortis dictum. Etiam mollis volutpat odio, id euismod justo gravida a. Aliquam erat-->
+                                <!--volutpat. Phasellus faucibus venenatis lorem, vitae commodo elit pretium et. Duis-->
+                                <!--rhoncus lobortis congue. Vestibulum et purus dui, vel porta lectus. Sed vulputate-->
+                                <!--pulvinar adipiscing.</p>-->
 
                             <div class="clear"></div>
                         </div><!-- .tab1 .tab_body -->
@@ -881,8 +883,8 @@
         }
 
         function refreshDescribe(data) {
-            $("#pdtDescribe").text(data.pdtDescribe);
-            $("#pdtDescribe2").text(data.pdtDescribe);
+            $("#pdtDescribe").html(data.pdtDescribe);
+            $("#pdtDescribe2").html(data.pdtDescribe);
         }
 
         function refreshPrice(data) {
