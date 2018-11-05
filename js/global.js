@@ -1,5 +1,5 @@
-var domain_name="http://localhost:8088/api/";//本地
-// var domain_name="http://www.mugdiy.com/webservice/api/";//生产
+// var domain_name="http://localhost:8088/api/";//本地
+var domain_name="http://www.mugdiy.com/webservice/api/";//生产
 
 // 获取通过GET请求传递来的参数
 function getQueryString() {

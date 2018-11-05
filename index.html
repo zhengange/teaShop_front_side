@@ -467,8 +467,10 @@
                         habitant nullam morbi et odio nibh mus dictum tellus erat.</p>
                     <form class="letter_form">
                         <input type="email" name="newsletter" class="l_form" value=""
-                               placeholder="Enter your email address..."/>
-                        <input type="submit" id="submit" value=""/>
+                               placeholder="mugdiyshop@gmail.com"/>
+                        <a href="mailto:mugdiyshop@gmail.com">
+                            <input type="button" id="submit" value=""/>
+                        </a>
                     </form>
                     <div class="lettel_description">
                         Vel lobortis gravida. Cursus in dapibus ultrices velit fusce. Felis lacus erat.
@@ -924,6 +926,7 @@
         function initNewsLetter(data) {
             $("#newsLetterText").html(data.textContent);
         }
+
         getNewsLetterText();
 
     });
