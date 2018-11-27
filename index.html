@@ -125,19 +125,19 @@
 <section id="main" class="home">
     <div class="container_12">
         <div id="top_button">
-            <div class="grid_4">
+            <div class="grid_4" id="banner1Div">
                 <a href="#" class="button_block best_price">
                     <img src="images/banner1.png" alt="Banner 1"/>
                 </a><!-- .best_price -->
             </div><!-- .grid_4 -->
 
-            <div class="grid_4">
+            <div class="grid_4" id="banner2Div">
                 <a href="#" class="button_block new_smells">
                     <img src="images/banner2.png" alt="Banner 2"/>
                 </a><!-- .new smells -->
             </div><!-- .grid_4 -->
 
-            <div class="grid_4">
+            <div class="grid_4" id="banner3Div">
                 <a href="#" class="button_block only_natural">
                     <img src="images/banner3.png" alt="Banner 3"/>
                 </a><!-- .only_natural -->
@@ -641,7 +641,8 @@
         function initSliderPics(data) {
             for (var i = 0; i < data.length; i++) {
                 var row = data[i];
-                var appStr = "<div id='slide" + i + "'> <img src='" + domain_name + "v1/File/getImage?fileName=" + row.imageGuid + "' alt='' title=''/> <div class='slid_text'>";
+                var imgGuid = row.productEntity.pdtImgGuid;
+                var appStr = "<div id='slide" + i + "'> <img src='" + domain_name + "v1/File/getImage?fileName=" + imgGuid + "' alt='' title=''/> <div class='slid_text'>";
                 if (row.title) {
                     appStr += "<h3 class='slid_title'><span>" + row.title + "</span></h3> ";
                 }
@@ -653,6 +654,10 @@
                 }
                 appStr += "</div> </div>";
                 slider.append(appStr);
+                $("#slide" + i).wrap("<a href='" + row.sliderHref + "'></a>");
+//                $("#slide" + i).off("click").on("click", function () {
+//                    window.location.href = row.sliderHref;
+//                });
                 myController.append("<div class='control'><span>" + i + "</span></div>");
             }
 
@@ -928,6 +933,100 @@
         }
 
         getNewsLetterText();
+
+        getBanner1();
+        getBanner2();
+        getBanner3();
+
+        function initBanner1Div(div, data) {
+            var a = div.find("a");
+            a.attr("href", data.bannerHref);
+            var img = div.find("img");
+            img.attr("src", domain_name + "v1/File/getImage?fileName=" + data.bannerImgGuid);
+        }
+
+//        function initBanner1Div(div,data) {
+//            var a = $("#banner1Div").find("a");
+//            a.attr("href", data.bannerHref);
+//            var img = $("#banner1Div").find("img");
+//            img.attr("src", domain_name + "v1/File/getImage?fileName=" + data.bannerImgGuid);
+//        }
+
+        function getBanner1() {
+            $.ajax({
+                url: domain_name + "v1/Index/getBannerByTitle",
+                type: "get",
+                data: {'title': 'banner1'},
+                error: function (response) {
+                    if (response.Message != undefined) {
+                        MessengerError(response.Message);
+                    } else {
+                        MessengerError("数据获取失败！");
+                    }
+                },
+                success: function (response) {
+                    if (response.code == 1) {
+                        console.log(response);
+                        if (response && response.data) {
+                            initBanner1Div($("#banner1Div"), response.data);
+                        }
+                    } else {
+                        MessengerError(response.msg);
+                    }
+                }
+            });
+        }
+
+        function getBanner2() {
+            $.ajax({
+                url: domain_name + "v1/Index/getBannerByTitle",
+                type: "get",
+                data: {'title': 'banner2'},
+                error: function (response) {
+                    if (response.Message != undefined) {
+                        MessengerError(response.Message);
+                    } else {
+                        MessengerError("数据获取失败！");
+                    }
+                },
+                success: function (response) {
+                    if (response.code == 1) {
+                        console.log(response);
+                        if (response && response.data) {
+                            initBanner1Div($("#banner2Div"), response.data);
+                        }
+                    } else {
+                        MessengerError(response.msg);
+                    }
+                }
+            });
+        }
+
+        function getBanner3() {
+            $.ajax({
+                url: domain_name + "v1/Index/getBannerByTitle",
+                type: "get",
+                data: {'title': 'banner3'},
+                error: function (response) {
+                    if (response.Message != undefined) {
+                        MessengerError(response.Message);
+                    } else {
+                        MessengerError("数据获取失败！");
+                    }
+                },
+                success: function (response) {
+                    if (response.code == 1) {
+                        console.log(response);
+                        if (response && response.data) {
+                            initBanner1Div($("#banner3Div"), response.data);
+                        }
+                    } else {
+                        MessengerError(response.msg);
+                    }
+                }
+            });
+        }
+
 
     });
 </script>
